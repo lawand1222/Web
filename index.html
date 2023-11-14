@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funtime</title>
+    <style>
+        /* Resetting default margin/padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            position: relative; /* Added to position the button */
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column; /* Added to align button under boxes */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1,
+        .box2 {
+            width: 200px;
+            height: 150px;
+            background-color: rgba(243, 156, 18, 0.7); /* Using RGBA for opacity */
+            border-top: 35px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            color: white;
+        }
+
+        .image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Ensure the image is behind the boxes */
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .custom-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color:darkorange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+            text-decoration: none; /* Added to remove default link underline */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="box1 p">Ahmad</div>
+        <div class="box2 p1">Welcomes You</div>
+        <div class="button-container">
+            <a href="https://www.pornhub.com"> <!-- Your URL goes here -->
+                <button class="custom-button">Click to Open</button>
+            </a>
+        </div>
+        <div class="image">
+            <img src="./pexels-alexander-krivitskiy-1580110.jpg" alt="Background Image">
+        </div>
+    </div>
+    
+</body>
+</html>
